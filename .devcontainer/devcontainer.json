@@ -1,1 +1,9 @@
-
+my-repo/
+  .devcontainer/
+    devcontainer.json
+    Dockerfile
+  notebooks/
+    my_analysis.Rmd
+    another_notebook.ipynb
+  README.md
+  ...
