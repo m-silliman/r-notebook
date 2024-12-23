@@ -1,9 +1,18 @@
-my-repo/
-  .devcontainer/
-    devcontainer.json
-    Dockerfile
-  notebooks/
-    my_analysis.Rmd
-    another_notebook.ipynb
-  README.md
-  ...
+{
+  "name": "R Notebook Environment",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "remoteUser": "root",
+  "forwardPorts": [8888],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "REditorSupport.r",           // R language support
+        "ms-toolsai.jupyter",        // Jupyter notebook support
+        "ikuyadeu.r",                // R debugger, formatting
+        "yzhang.markdown-all-in-one" // optional: better Markdown
+      ]
+    }
+  }
+}
